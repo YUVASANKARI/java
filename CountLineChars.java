@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 import java.lang.*;
 import java.io.*;
 class CountLineChars
@@ -10,6 +10,7 @@ class CountLineChars
    Scanner s=new Scanner(System.in);
    System.out.println("\nEnter the line:");
    line=s.nextLine();
+   s.close();
    for(int i=0;i!=line.length();i++)
    {
     if(line.charAt(i)>='A'&&line.charAt(i)<='Z' || line.charAt(i)>='a'&&line.charAt(i)<='z')
