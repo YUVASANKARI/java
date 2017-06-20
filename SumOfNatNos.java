@@ -8,10 +8,10 @@ class SumOfNatNos
           int n,sum=0;
           Scanner s=new Scanner(System.in);
           n=s.nextInt();
-          for(int i=0;i<n;i++)
+          for(int i=1;i<=n;i++)
           {
-           sum+=s.nextInt();
+           sum+=i;
           }
-          System.out.print("\nSum of given "+n+" numbers is "+sum);
+          System.out.print("\nSum of "+n+" numbers is "+sum);
 	}
 }
