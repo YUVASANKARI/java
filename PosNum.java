@@ -7,9 +7,11 @@ class PosNum
  {
   Scanner s=new Scanner(System.in);
   int no=s.nextInt();
-  if(no>=0)
+  if(no>0)
    System.out.println(no+" is a positive number");
+  else if(no<0)
+    System.out.println(no+" is a negative number");	
   else
-    System.out.println(no+" is a not positive number");	
+    System.out.println(no+" is zero");
  }
 }
