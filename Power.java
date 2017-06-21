@@ -1,27 +1,30 @@
-import java.util.*;
+import java.util.Scanner;
 import java.lang.*;
 import java.io.*;
-class Power
+public class Power
 {
- public static void main (String[] args) throws java.lang.Exception
+ public static void main (String[] args)
  {
-   int base,pow,res=1;
-   Scanner s=new Scanner(System.in);
-   System.out.println("\nEnter the base value:");
-   base=s.nextInt();
-   System.out.println("\nEnter the power value:");
-   pow=s.nextInt();
-   if(base==0)
-    System.out.println("Value: 0");
-   else if(pow==0)
-    System.out.println("Value: 1");
-   else if(pow==1)
-    System.out.println("Value: "+base);
-   else
-   {
-    for(int i=1;i<=pow;i++)
-     res*=base;
-    System.out.println("Value: "+res);  
-   }
+  	 int base, pow;
+	  	Scanner input = new Scanner(System.in);
+	  	System.out.println("\nEnter the base value:");
+	  	base= input.nextInt();
+	  	System.out.println("\nEnter the power value:");
+  		pow= input.nextInt();
+	  	input.close();
+  		System.out.println("Value: "+ power(base,pow) ); 
  }
+
+
+//Works for all positive integers
+	private static int power(int base, int pow)
+	{
+	  	int result = 1;
+
+	  	for (int i = 0; i < pow; ++i) 
+		     	result *= base;
+
+	  	return result;
+	}
+
 }
