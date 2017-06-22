@@ -7,7 +7,7 @@ public class minsbwtime
  {
   Scanner s=new Scanner(System.in);
   System.out.println("Enter the two times in hh mm format : ");
-  long mins=(long)((s.nextInt()*60-s.nextInt())-(s.nextInt()*60-s.nextInt()));
+  long mins=(long)((s.nextInt()*60+s.nextInt())-(s.nextInt()*60+s.nextInt()));
   System.out.println("Mins Difference : "+mins);
  }
 }
