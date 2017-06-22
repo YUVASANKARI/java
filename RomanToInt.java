@@ -55,19 +55,19 @@ public class RomanToInt
     }
     if (romanNumeral.contains("XL"))
     {
-        decimal-=10;
+        decimal-=20;
     }
     if (romanNumeral.contains("XC"))
     {
-        decimal-=10;
+        decimal-=20;
     }
     if (romanNumeral.contains("CD"))
     {
-        decimal-=100;
+        decimal-=200;
     }
     if (romanNumeral.contains("CM"))
     {
-        decimal-=100;
+        decimal-=200;
     }
     System.out.println("\nEquivalent integer of roman numeral "+romanNumeral+" is "+decimal);
 }
