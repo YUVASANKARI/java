@@ -57,7 +57,7 @@ public static void main(String args[])
     break;
    }
   }
-  if(i==n2)
+  if(i==n2&&flag==1)
    System.out.println("Given array2 is subset of array 1");
   else
    System.out.println("Given array2 is not subset of array 1");  
@@ -85,7 +85,7 @@ public static void main(String args[])
     break;
    }
   }
-  if(i==n1)
+  if(i==n1&&flag==1)
    System.out.println("Given array1 is subset of array 2");
   else
    System.out.println("Given array1 is not subset of array 2");  
