@@ -8,7 +8,7 @@ public class possibleCount
   System.out.print("\nEnter the string:");
   str=s.nextLine();
   int n=str.length();
-  System.out.println("\nNo of possible ways to group the string : "+(n+1-2));
+  System.out.println("\nNo of possible ways to group the string : "+(n+1-1));
  }
 }
     
