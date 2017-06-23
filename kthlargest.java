@@ -17,7 +17,7 @@ public class kthLargest
   {
    for(j=i+1;j<50;j++)
    {
-    if(arr[i]>arr[j])
+    if(arr[i]<arr[j])
     {
     tmp=arr[i];
     arr[i]=arr[j];
